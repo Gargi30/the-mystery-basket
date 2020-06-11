@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Welcome</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Bootstrap files/bootstrap.css" />
+<script src="Bootstrap files/bootstrap.min.js"></script>
+<script src="Bootstrap files/jsquery.min.js"></script>
+<script>
+        function validate()
+        {
+            var na=document.getElementById("name").value;
+            if(na===''||na===null){
+               alert("Name required");
+               return false ;
+               }
+               else if(na.length<5)
+               {
+                   alert(" name too short!!(min 5)");
+                   return false ;
+                }
+             var add=document.getElementById("add").value;
+            if(add===''||add===null){
+               alert("address fielld empty");
+               return false ;
+               }
+              var ph=document.getElementById("ph").value;
+            if(ph===''||ph===null){
+               alert("phone no.Field cannot be left empty ");
+               return false ;
+               }
+               else if(isNaN(ph)){
+                   alert("Enter No. only");
+                   return false ;
+                   }
+            var pi=document.getElementById("pin").value;
+            if(pi===''||pi===null){
+               alert("Pin Field cannot be left empty ");
+               return false ;
+               }
+               else if(isNaN(pi)){
+                   alert("Enter No. only");
+                   return false ;
+                   }
+           }
+           </script>
+        <style>
+            .back {
+                background-image: url("registration-background.jpg");
+                position:relative;
+                padding:0;
+                margin:0;
+                height:600px;
+                background-repeat:no-repeat;
+                background-size:100% 700px;
+                background-position: bottom center;
+                background-attachment:fixed;
+                width: 100%; 
+            }
+        </style>
+    </head>
+    <body bgcolor=black>
+        <nav class="nav navbar-inverse">
+<div class="container">
+    <img src="g.jpg" class="img-default col-sm-2">
+<div class="navbar-header">
+</div>
+<ul class="nav navbar-nav">
+<li><a href="newhtml.html">Home</a></li>
+<li><a href="regn_welcome_page.html">Register</a></li>
+<li><a href="contactus.html">Contact us</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+
+    <li class=" "><table><tr><br/><td><input type="text"  class="form-control" placeholder="search" id="Input"/></td><td><input type="Button" value="Search" class="form-control" id="button"/></td></tr></li> 
+</table>
+ <li class=""><a href="userreg.html">Sign up</a></li>
+<li class=""><a href="login.html">Login</a></li>
+</ul>
+</div>
+</nav>
+        <table border="1" style="width: 100%">
+
+            <tr>
+            <td style="height: 500px">
+                <table  background=black style="width: 100%; height: 440px">
+                    <tr>
+                        <td style="width: 15%">
+                                         
+                                 <center>   <img src="logo.jpg" width="650" height="450" class="img-default col-sm-60"></center>
+                            
+                        </td>
+                        <td style="width: 85%">
+                            
+                                    <center>   <img src="banner.jpg" width="650" height="450"></center>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 15%">
+                    <center><font size="12" face="""arial"><a href="review.html">Review</a></font></center>     
+                        </td>
+                        <td style="width: 85%">
+                            <div class="col-md-5">
+                                
+                            
+                                </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+    <table>
+        <tr>
+        <nav class="nav navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <h4><center><label class="navbar-brand">&copy;This site is  the copyright of Team Marvel</<br/>Members:
+                            Gargi Bhattacharya,
+                                Adrija Roy
+                               
+                                
+                                   
+           </label></center></h4>
+                </div>
+            </div>
+        </nav>
+    </tr>
+</table>
+</body>
+</html>

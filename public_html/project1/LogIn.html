@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" href="Bootstrap files/bootstrap.css" />
+        <script src="Bootstrap files/bootstrap.min.js"></script>
+        <script src="Bootstrap files/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Untitled Document</title>
+        <script>
+            function validate()
+        {
+            var na=document.getElementById("login").value;
+           if(na===''||na===null)
+           {
+               alert(" Id required");
+               return false ;
+           }
+                   else if(na!=="marvel")
+                   {
+                       alert("Invald user id or password");
+                       return false;
+                   }
+                   else
+                   {
+                       return true;
+                   }
+      
+            var n=document.getElementById("passw").value;
+            if(n===''||n===null){
+               alert(" Password required");
+               return false ;
+               }
+               
+                   else if(na!=="gourmet")
+                   {
+                       alert("Invald user id or password");
+                       return false;
+                   }
+                   else
+                   {
+                       return true;
+                   }
+        }
+               
+        </script>
+        <style>
+            body{
+                background-image:url("resto.jpg");
+             }
+        </style>
+    </head>
+<body>
+        <nav class="nav navbar-inverse">
+        <div class="container">
+            <img src="rest.jpg" class="img-circle col-sm-1"></img>
+            <div class="navbar-header">
+                 <label class="navbar-brand">LogIn</label>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+            <li class=""><a href="newhtml.html">Back to Welcome</a></li>
+            </ul>
+        </div>
+        </nav> 
+<form class="form-group"action="#">
+    <table align="center" border="1" bgcolor="blue" style="margin-top: 1%">
+        <center><h3><strong>LogIn Page</strong></h3></center>
+        <tr><td><font color="brown"><strong>LogIn Id:</strong></font></td><td><input type="text"placeholder="Id" class="form-control" id="login" /></td></tr></br>
+        <tr><td><font color="brown"><strong>Password:</strong></font></td><td><input type="password" placeholder="password" class="form-control" id="passw" /></td></tr></table>
+    <a href="registration_view.html"><input  type="button" align="center" style="margin-left: 740px" value="Login"class="btn btn-success" onclick="return validate()"/></a>
+</form>
+</body>
+</html>

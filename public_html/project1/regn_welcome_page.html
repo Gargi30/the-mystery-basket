@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <link rel="stylesheet" href="Bootstrap files/bootstrap.css" />
+        <script src="Bootstrap files/bootstrap.min.js"></script>
+        <script src="Bootstrap files/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<nav class="nav navbar-inverse">
+        <div class="container">
+             <img src="rest.jpg" class="img-circle col-sm-1"></img>
+            <div class="navbar-header">
+                <label class="navbar-brand">Registration Form</label>
+            </div>
+            
+             <ul class="nav navbar-nav navbar-right">
+                <li class=""><a href="LogIn.html">LogIn</a></li>
+            </ul>
+        </div>
+        </nav> 
+    <script>
+        function validate()
+        {
+            var na=document.getElementById("resname").value;
+            if(na===''||na===null){
+               alert("  name required");
+               return false ;
+               }
+               else if(na.length<5){
+                   alert(" name too short!!(min 5)");
+                   return false ;
+                   }
+            var n=document.getElementById("restreet").value;
+            if(n===''||n===null){
+               alert(" Street name required");
+               return false ;
+               }
+               else if(n.length<5){
+                   alert(" Street name too short!!(min 5)");
+                   return false ;
+                   }
+            
+                   var ph=document.getElementById("resphone").value;
+            if(ph===''||ph===null){
+               alert("phone no.Field cannot be left empty ");
+               return false ;
+               }
+               else if(isNaN(ph)){
+                   alert("Enter No. only(in phone number) ");
+                   return false ;
+                   }
+                   
+        }
+    </script>
+    <style>
+       #resname
+       {
+           font-family: "algerian";
+           font-size: 20px;
+           color: blue;
+       }
+        #restreet
+        {
+            font-family:"algerian";
+            font-size:20px;
+            color:blue;
+    
+        }
+        #reslandmark
+        {
+            font-family:"alregian";
+            font-size:20px;
+            color:blue;
+           
+        }
+        #resphone
+        {
+            font-family:"algerian";
+            font-size:20px;
+            color:blue;
+           
+        }
+        #resemail
+        {
+            font-family:"algerian";
+            font-size:20px;
+            color:blue;
+           
+        }
+        
+        #resowner
+        {
+            font-family:"algerian";
+            font-size:20px;
+            color:blue;
+           
+        }
+        #food
+        {
+            font-family:"algerian";
+            font-size:20px;
+            color:blue;
+           
+        }
+        #features
+        {
+            font-family:"algerian";
+            font-size:20px;
+            color:blue;
+           
+        }
+        #payment
+        {
+            font-family: "algerian";
+            font-size: 20px;
+            color:blue;
+        }
+        </style>
+        <title>Restaurant booking</title>
+<center>
+<br/><br/>
+<h3><marquee behavior="Alternate"><font face="Magneto" size="20" color="white"><u><i>Restaurant booking</i></u></font></marquee></h3>
+</head>
+    <body background="set-table.jpg">
+        <table style="margin-left: 800px">
+            <tr><td><strong><font color="white"> Restaurant Name :</strong></td><td><input type="text" placeholder="name" style="font-family:Bodoni MT Black ;font-size:20px; " id="resname"/></tr></td><br/>
+        <tr><td><strong><font color="white">Restaurant Street :</font></strong></td><td><input type="text" placeholder="Street" id="restreet"/><br/>
+<tr><td><b><font color="white">Landmark :-</font></b></td><td><input type="text" placeholder="Landmark" id="reslandmark"/><br/></tr></td>
+<tr><td><b><font color="white">Phone no. :-</font></b></td><td><input type="text" placeholder="Phn no." id="resphone"/><br/></tr></td>
+<tr><td><b><font color="white">Email id. :-</font></b></td><td><input type="text" placeholder="Email id." id="resemail"/><br/></tr></td>
+<tr><td><b><font color="white">Are you the owner:-</font></b></td><td><input type="checkbox" name="Yes" value="yes"id="resowner"/><br/></tr></td>
+<tr><td><b><font color="white">Food :-</font></b></td><td><select id="food"><option value="">Choose Option</option><option value 1="">Chinese</option><option value 2="">Italian</option><option value 3="">Thai</option><option value 4="">Indian</option><option value 5="">Continental</option><option value 6="">Sub-Continental</option></select>
+<tr><td><b><font color="white">Features :-</font></b></td><td><select id="features"><option value="">Choose Option</option><option value 1="">Drinks</option><option value 2="">Snacks</option><option value 3="">Lunch</option><option value 4="">Dinner</option></select>
+<tr><td><b><font color="white">Payment :-</font></b></td><td><select id="payment"><option value="">Choose Option</option><option value 1="">Cash</option><option value 2="">Card Payment</option></select></br>
+        &nbsp; &nbsp; &nbsp;<a href="registration_view.html"><input type="button" value="Submit" onclick="return validate()"/></a>
+<a href="about.blank "><input type="button" value="Reset"/></a>
+        </table>
+</center>
+</body>
+</html>

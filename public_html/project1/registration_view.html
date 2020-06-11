@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <link rel="stylesheet" href="Bootstrap files/bootstrap.css" />
+        <script src="Bootstrap files/bootstrap.min.js"></script>
+        <script src="Bootstrap files/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ <nav class="nav navbar-inverse">
+        <div class="container">
+             <img src="rest.jpg" class="img-circle col-sm-1"></img>
+            <div class="navbar-header">
+                <label class="navbar-brand">Registration Form</label>
+            </div>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class=""><a href="#">Login Id<label>Gourmet Central</label></a></ul>
+                    <ul class="nav navbar-nav navbar-left">
+                        <a href="#">LoggedIn</a></ul>
+                    <ul class="nav navbar-nav navbar-right">
+                              <a href="Logout.html">logout</a>
+            </ul>
+        </div>
+        </nav> 
+    <script>
+        function validate()
+        {
+            var na=document.getElementById("resname").value;
+            if(na===''||na===null){
+               alert("  name required");
+               return false ;
+               }
+               else if(na.length<5){
+                   alert(" name too short!!(min 5)");
+                   return false ;
+                   }
+            var n=document.getElementById("restreet").value;
+            if(n===''||n===null){
+               alert(" Street name required");
+               return false ;
+               }
+               else if(n.length<5){
+                   alert(" Street name too short!!(min 5)");
+                   return false ;
+                   }
+            
+                   var ph=document.getElementById("resphone").value;
+            if(ph===''||ph===null){
+               alert("phone no.Field cannot be left empty ");
+               return false ;
+               }
+               else if(isNaN(ph)){
+                   alert("Enter No. only(in phone number) ");
+                   return false ;
+                   }
+                   
+        }
+    </script>
+  
+        <title>Register Restaurant</title>
+<br/><br/><br/><br/><br/>
+
+</head>
+<body background="chay.jpg">
+    
+    <form class="form-group"action="#" style="margin-right: 150px">
+<table align="left" style="margin-left: 330px; margin-top: 8%">
+<h3><marquee behavior="Alternate"><font face="Magneto" color="DarkOrange" size="20"><u><i>Restaurant booking</i></u></font></marquee></h3>
+<tr><td><strong><font size="5">Restaurant Name :</font></strong></td><td><label><font size="5">Gourmet Central</font></label></td></tr><br/>
+<tr><td><strong>Restaurant Street :-</strong></td><td><label>Hill-Cart Road</label></td></tr><br/>
+<tr><td><b>Landmark :-</b></td><td><label>Church</label><br/></td></tr>
+<tr><td><b>Phone no. :-</b></td><td><label>9832015198</label><br/></td></tr>
+<tr><td><b>Email id. :-</b></td><td><label>gourmet.central@rediffmail.com</label><br/></td></tr>
+<tr><td><b>Are you the owner:-</b></td><td><label>yes</label><br/></td></tr>
+<tr><td><b>Food :-</b></td><td><label>Italian</label>
+<tr><td><b>Features :-</b></td><td><label>Lunch</label>
+<tr><td><b>Payment :-</b></td><td><label>Cash</label>
+</table>
+</form>
+</body>
+</html>
